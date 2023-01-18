@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codigo SIG-N</title>
+    <link rel="stylesheet" href="Style.css"/>
+  </head>
+  <body>
+    <form action="" class="formulario">
+    <p class="IMGIG"><img src="IG.jpg" class="IG" /></p>
+      <h1 class="formulario__titulo">Envio de tu codigo SIG-N</h1>
+      <h3 class="formulario__subtitulo">MFPD</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para enviarte a tu whatsapp
+        tu codigo SIG-N de interes
+      </p>
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <!--Input que recibe el nombre de la persona interesada-->
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Escriba su nombre"
+      />
+      <!--Input de la fecha-->
+      <label for="fecha" class="formulario__label"
+        >Fecha del llenado de este formulario</label>
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+      <!--Input telefono-->
+      <label for="telefono" class="formulario__label">Ingresa tu numero de telefono</label>
+      <input type="text" name="Telefono" id="Telefono" class="formulario__input" placeholder="96613735">
+      <!--Codigo SIG-N-->
+      <label for="telefono" class="formulario__label">Ingresa su codigo SIG-N</label>
+      <input type="text" name="Telefono" id="codigo" class="formulario__input" placeholder="00-0000-1111">
+      <!--Input Servicio-->
+      <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar en su cuadrante?</label>
+      <input type="text" name="Servicio" id="servicio" class="formulario__input">
+      <!--Respuesta-->
+      <div id="respuesta"></div> 
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="Form.js"></script> 
+  </body>
+</html>
