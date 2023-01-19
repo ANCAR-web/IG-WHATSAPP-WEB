@@ -19,7 +19,7 @@ enviar.addEventListener("click",(e)=>{
 		${cliente}%0A
 		*Fecha de la solicitud*%0A
 		${fecha}%0A
-        *Codigo SIG-N*%0A
+    *Codigo SIG-N*%0A
 		${codigo}%0A
 		*¿Cuál es el servicio que se desea realizar?*%0A
 		${servicio}`;
